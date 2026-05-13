@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+
+{% block content %}
+<!-- <div class="game-container">
+    <section class="setup-panel">         -->
+        <!-- This form sends the user to the 'start_game' function in app.py -->
+        <!-- <form action="{{ url_for('setup') }}" method="GET">
+            <button type="submit" class="btn-start">Set Up Game</button>
+        </form> -->
+        
+    <!-- </section>
+</div> -->
+<!-- <p>Welcome: {{ num_players }} {{ duration }} {{ players }}</p> -->
+
+<div class="game-container-2">
+    <div class="money-panel">
+        <h2>Timer</h2>
+
+    </div>
+    <div class="money-panel">
+        <h2>Money</h2>
+
+        <!-- Stat Lines -->
+        <div class="stat-group">
+            <div class="stat-line">
+                <span>Current Chain:</span>
+                <span class="value gold">£0</span>
+            </div>
+            <div class="stat-line">
+                <span>Round Bank:</span>
+                <span class="value green">£0</span>
+            </div>
+            <div class="stat-line">
+                <span>Total Bank:</span>
+                <span class="value green">£0</span>
+            </div>
+        </div>
+
+        <h3>Money Chain:</h3>
+        
+        <!-- Grid of money values -->
+        <div class="money-grid">
+            <div class="grid-item active">£0</div>
+            <div class="grid-item">£20</div>
+            <div class="grid-item">£50</div>
+            <div class="grid-item">£100</div>
+            <div class="grid-item">£200</div>
+            <div class="grid-item">£300</div>
+            <div class="grid-item">£450</div>
+            <div class="grid-item">£600</div>
+            <div class="grid-item">£800</div>
+            <div class="grid-item">£1000</div>
+        </div>
+    </div>
+        <div class="active-player-panel">
+            <h2 class="current-player-title">Current Player: <span id="current-player-name">a</span></h2>
+
+            <div class="question-card">
+                <div class="question-text">Who discovered penicillin?</div>
+                
+                <div class="question-controls">
+                    <button class="link-btn">Show Answer</button>
+                    <button class="link-btn">Next Question</button>
+                </div>
+            </div>
+
+            <div class="game-actions">
+                <button class="action-btn btn-correct">Correct</button>
+                <button class="action-btn btn-bank">Bank (£0)</button>
+                <button class="action-btn btn-wrong">Wrong</button>
+            </div>
+        </div>
+</div>
+
+
+
+{% endblock %}
+
+{% endblock %}

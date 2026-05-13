@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+<!-- {% block head %}
+
+{% endblock %}
+
+{% block body %} -->
+
+{% block content %}
+<div class="game-container">
+    <section class="setup-panel">        
+        <!-- This form sends the user to the 'start_game' function in app.py -->
+        <form action="{{ url_for('setup') }}" method="GET">
+            <button type="submit" class="btn-start">Set Up Game</button>
+        </form>
+        
+    </section>
+</div>
+
+<!-- {% endblock %} -->
+
+{% endblock %}

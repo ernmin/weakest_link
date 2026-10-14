@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
-{% block head %}
+<!-- {% block head %}
 
-{% endblock %}
+{% endblock %} -->
 
 {% block body %}
 
@@ -19,9 +19,9 @@
 <!-- <p>Welcome: {{ num_players }} {{ duration }} {{ players }}</p> -->
 
 <div class="game-container-2">
-    <div class="money-panel">
-        <h2>Timer</h2>
-
+    <div class="timer-panel">
+        <div class="timer">Timer</div>
+        <div id="duration"> {{ duration }} </div>
     </div>
     <div class="money-panel">
         <h2>Money</h2>
@@ -80,6 +80,11 @@
 
 
 
+{% endblock %}
+
+{% block scripts %}
+    <!-- This puts the script tag into the base.html 'scripts' block -->
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
 {% endblock %}
 
 {% endblock %}
